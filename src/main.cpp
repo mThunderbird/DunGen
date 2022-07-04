@@ -8,7 +8,7 @@ int main(int* argc, char* argv[])
 	// Welcome to our Masterclass :) - Nite Games
 	bool run = true;
 	while (run) {
-		cout << "a";
+		cout << "b";
 	}
 	return 0;
 }
