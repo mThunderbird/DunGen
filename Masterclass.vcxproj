@@ -143,7 +143,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\delabella.cpp" />
+    <ClCompile Include="src\Dungeon.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\defines.h" />
+    <ClInclude Include="include\delabella.h" />
+    <ClInclude Include="include\Dungeon.h" />
+    <ClInclude Include="include\predicates.h" />
+    <ClInclude Include="include\World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
