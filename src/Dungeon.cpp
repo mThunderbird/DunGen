@@ -410,44 +410,6 @@ void Dungeon::init()
 	m_corridorRoomTexture = World::loadTexture("img\\game\\room_background\\corridor.bmp");
 	m_defaultRoomTexture = World::loadTexture("img\\game\\room_background\\defaultRoom.bmp");
 
-	//SDL_FRect a;
-	//SDL_FRect b;
-
-	//a = { 340, 180, 120, 100 };
-	//b = { 100, 60, 50, 120 };
-
-	//a = { 564, 540, 48, 36 };
-	//b = { 736, 500, 44, 40 };
-
-	//DrawableF roomA;
-	//roomA.texture = m_spawnRoomTexture;
-	//roomA.rect = a;
-
-	//DrawableF roomB;
-	//roomB.texture = m_defaultRoomTexture;
-	//roomB.rect = b;
-
-	//vector<SDL_FRect> corridors;
-
-	//corridors = generateCorridorv2(a, b);
-
-	//SDL_RenderClear(World::m_renderer);
-
-	//World::drawObject(roomA);
-	//World::drawObject(roomB);
-
-	//printf("%d",corridors.size());
-
-	//for (SDL_FRect& itr : corridors)
-	//{
-	//	DrawableF temp;
-	//	temp.rect = itr;
-	//	temp.texture = m_corridorRoomTexture;
-	//	World::drawObject(temp);
-	//}
-
-	//SDL_RenderPresent(World::m_renderer);
-
 	m_background.texture = World::loadTexture("img\\game\\room_background\\background.bmp");
 	m_defaultRoomTexture = World::loadTexture("img\\game\\room_background\\defaultRoom.bmp");
 	m_mainRoomTexture = World::loadTexture("img\\game\\room_background\\mainRoom.bmp");
@@ -543,7 +505,7 @@ void Dungeon::init()
 	sectorCircles.push_back(outercircle);
 
 	start = SDL_GetTicks();
-	//generateTextures();
+	generateTextures();
 
 	scale(SCALE);
 

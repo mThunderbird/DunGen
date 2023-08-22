@@ -233,7 +233,7 @@ enum class COLOR
 
 
 static int mp = 1;
-static int SCALE = 1;
+static int SCALE = 8;
 
 static int TILE_SIZE = 4 * mp;
 static int WIDTH_MAX = 100 * mp;
